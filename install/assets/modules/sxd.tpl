@@ -28,5 +28,5 @@ else    $manager_theme  = '';
 echo '<h1>Sypex Dumper 2</h1>
 <div class="sectionHeader">Backup and restore MySQL</div>
 <div class="sectionBody" id="lyr4">
-<iframe src="/assets/modules/sxd/" width="100%" height="80%" frameborder="0" style="margin:0;"></iframe>
+<iframe src="../sxd/" width="100%" height="80%" frameborder="0" style="margin:0;"></iframe>
 </div>';
