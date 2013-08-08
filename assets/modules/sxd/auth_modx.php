@@ -1,4 +1,7 @@
 <?php
+include_once(dirname(__FILE__)."/../../cache/siteManager.php");
+require_once('protect.inc.php');
+include_once('config.inc.php');
 // Sypex Dumper 2 authorization file for MODx 1.0.x
 $path = '../manager/includes/config.inc.php';
 include($path);
@@ -13,7 +16,7 @@ if(isset($_SESSION['modx.session.created.time']) &&
 	if($this->connect($database_server, '', $database_user, $database_password)){
 		// Проверяем юзера
 		$this->CFG['my_db'] = trim($dbase, '`');
-		$this->CFG['exitURL'] = '../manager/';
+		$this->CFG['exitURL'] = '/'MGR_DIR'/';
 		$auth = 1;
 	}
 }
