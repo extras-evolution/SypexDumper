@@ -15,7 +15,7 @@ if(isset($_SESSION['modx.session.created.time']) &&
 	if($this->connect($database_server, '', $database_user, $database_password)){
 		// Проверяем юзера
 		$this->CFG['my_db'] = trim($dbase, '`');
-		$this->CFG['exitURL'] = '../manager/';
+		$this->CFG['exitURL'] = '../'.MGR_DIR.'/';
 		$auth = 1;
 	}
 }
